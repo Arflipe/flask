@@ -581,7 +581,7 @@ class FlaskGroup(AppGroup):
         if self._loaded_plugin_commands:
             return
 
-        if sys.version_info >= (3, 10):
+        if sys.version_info >= (3, 11):
             from importlib import metadata
         else:
             # Use a backport on Python < 3.10. We technically have
